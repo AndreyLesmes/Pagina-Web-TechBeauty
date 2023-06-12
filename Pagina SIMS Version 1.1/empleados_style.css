@@ -1,0 +1,85 @@
+/*Para el fondo*/
+
+.registro{
+    width: 750px;
+    margin: 6% auto;
+    padding: 10px;
+    background: #fbb4b4;
+    border-radius: 12px;
+}
+
+/*Los titulos*/
+.registro .empleados h2{
+    font-size: 30px;
+}
+
+/*El texto debajo del segundo titulo*/
+.registro .empleados p{
+    color: #fff;
+    font-style: italic;
+}
+
+/*Para la letra*/
+.registro .empleados label{
+    color: #fff;
+    font-size: 20px;
+}
+
+/*Campos de texto*/
+.barra{
+    background-color:#ffd4d2de;
+    border-radius: 9px;
+    font-size: 18px;
+    border: none;
+    width: 240px;
+}
+
+/*Dividir la pagina*/
+.registro .empleados{
+    width: 600px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+}
+
+/*Para el boton*/
+.registro .empleados button[type = "submit"]{
+    margin: 14px;
+    padding: 10px 30px;
+    border-radius: 12px;
+    border: #fff;
+    background-color: #f14444;
+    color: #fff;
+    display: block;
+    margin-left: 90%;
+}
+
+.registro .empleados button[type="submit"]:hover {
+    background-color: #e69581;
+}
+
+@media(max-width: 800px){
+    .registro{
+        width: 450px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .registro .empleados{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .registro .empleados button[type="submit"]{
+        display: block;
+        margin-left: 30%;
+    }
+
+    .registro .empleados .barra{
+        width: 400px;
+        
+    }
+}
