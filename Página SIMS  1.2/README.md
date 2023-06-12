@@ -1,1 +1,1 @@
-Ejemplo de errores 404
+# Ejemplo de errores 404
