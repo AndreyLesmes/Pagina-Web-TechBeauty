@@ -1,0 +1,86 @@
+/*Para el fondo*/
+
+.registro{
+    width: 500px;
+    margin: 6% auto;
+    padding: 10px;
+    background: #fbb4b4;
+    border-radius: 12px;
+}
+
+/*Titulo*/
+.registro .proveedores h2{
+    font-size: 35px;
+    margin-left: 40px;
+}
+
+/*Letra*/
+.registro .proveedores label{
+    font-size: 20px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+/*Para las barras de texto*/
+.registro .proveedores .barra{
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-top: 8px;
+    background-color: #ffd4d2de;
+}
+
+/*Campo de texto*/
+.registro .proveedores textarea{
+    border-radius: 5px;
+    border: none;
+    margin-left: 12px;
+    margin-top: 9px;
+    background-color: #ffd4d2de;
+}
+
+/*Boton*/
+.registro .proveedores button[type = "submit"]{
+    margin: 12px;
+    padding: 10px 30px;
+    border-radius: 12px;
+    border: none;
+    background-color: #f14444;
+    color: #fff;
+    margin-left: 38%;
+}
+
+.registro .proveedores button[type="submit"]:hover {
+    background-color: #e69581;
+}
+
+
+/*Responsive*/
+@media(max-width: 800px){
+    .registro{
+        width: 390px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .registro .proveedores label{
+        padding: 15px;
+    }
+    .registro .proveedores button[type="submit"]{
+        display: block;
+        margin-left: 35%;
+    }
+
+    .registro .proveedores .barra{
+        margin-left: 50px;
+    }
+
+    .registro .proveedores textarea{
+        margin-left: 12px;
+        margin-right: 12px;
+        max-width: 350px;
+    }
+
+}

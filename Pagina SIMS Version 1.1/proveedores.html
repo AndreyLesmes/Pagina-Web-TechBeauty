@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="proveedores_style.css">
+    <title>Registro Proveedores</title>
+</head>
+<body>
+    <form class = "registro">
+        <div class = "proveedores">
+            <h2>Registro Proveedor</h2>
+            <br/>
+            <label for = "Nombre">Nombre: </label>
+            <input class = "barra" type = "text" id = "nombre" name = "nombre" placeholder="Ingrese su nombre" required>
+            <br/><br/>
+            <label for = "Apellido">Apellidos:  </label>
+            <input class = "barra" type = "text" id = "apellido" name = "apellido" placeholder="Ingrese sus apellidos" required>
+            <br/><br/>
+            <label for = "correo">Correo: </label>
+            <input class = "barra" type = "email" id = "correo" name = "correo" placeholder="Ingrese su correo" required>
+            <br/><br/>
+            <label for = "Celular">Celular: </label>
+            <input class = "barra" type = "tel" id = "celular" name = "celular" placeholder="Ingrese su numero de celular" required maxlength="10">
+            <br/><br/>
+            <label for = "Nit">Nit: </label>
+            <input class = "barra" type = "text" id = "nit" name = "nit" placeholder="Ingrese el nit" required>
+            <br/><br/>
+            <label for = "RSocial">Raz&oacute;n Social: </label>
+            <input class = "barra" type = "text" id ="rsocial" name = "rsocial" placeholder="Ingrese nombre de la empresa" required>
+            <br><br>
+            <label for = "productos">Listado de Productos: </label>
+            <br/><textarea  name = "productos" rows = "10" cols = "60"></textarea></p>
+            <button type = "submit">Guardar</button>
+        </div>
+    </form>
+</body>
+</html>
