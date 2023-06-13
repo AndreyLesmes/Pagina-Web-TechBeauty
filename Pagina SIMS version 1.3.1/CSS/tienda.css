@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/***************************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: #ffa1a1;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/*barra de navegación*/
+
+nav {
+    color: #fff;
+}
+
+nav .list-menus ul {
+    margin: 0;
+}
+
+nav .list-menus li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav .list-menus a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav .list-menus a:hover {
+    background-color: #b46e6e;
+    border-radius: 12px;
+}
+
+input[type="search"] {
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*lista desplegable */
+
+.submenu:hover .sb {
+    display: block;
+    border-radius: 12px;
+}
+
+.submenu .sb {
+    display: none;
+    background: #ffa1a1;
+    position: absolute;
+    z-index: 2;
+    /*z-index es para colocar un elemento sobre otros*/
+    width: 10%;
+}
+
+.sb a {
+    display: block;
+}
+
+/*ubicacion logo en la barra de navegación*/
+
+.logri {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 23px;
+}
+
+/*Tamaño imagen*/
+
+.logo img {
+    width: 123px;
+    height: 80px;
+}
+
+/**************************************/
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    align-content: space-between;
+}
+
+.card{
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido h3{
+    margin-bottom: 15px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: blueviolet;
+    border-radius: 12px;
+}
