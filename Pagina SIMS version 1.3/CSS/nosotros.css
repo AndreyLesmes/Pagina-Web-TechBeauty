@@ -1,0 +1,317 @@
+/*fondo*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 205, 205, 0.925));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: #ffa1a1;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/*barra de navegación*/
+
+nav {
+    color: #fff;
+}
+
+nav .list-menus ul {
+    margin: 0;
+}
+
+nav .list-menus li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav .list-menus a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav .list-menus a:hover {
+    background-color: #b46e6e;
+    border-radius: 12px;
+}
+
+input[type="search"] {
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*lista desplegable */
+
+.submenu:hover .sb {
+    display: block;
+    border-radius: 12px;
+}
+
+.submenu .sb {
+    display: none;
+    background: #ffa1a1;
+    position: absolute;
+    z-index: 2;
+    /*z-index es para colocar un elemento sobre otros*/
+    width: 10%;
+}
+
+.sb a {
+    display: block;
+}
+
+/*ubicacion logo en la barra de navegación*/
+
+.logri {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 23px;
+}
+
+/*Tamaño imagen*/
+
+.logo img {
+    width: 123px;
+    height: 80px;
+}
+
+/***********************************************/
+
+/*fondo formulario*/
+
+.formulario-contacto {
+    width: 750px;
+    background: #fbb4b4;
+    padding: 20px 8px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 12px;
+    margin-bottom: 90px;
+}
+
+/*titulo contactenos*/
+
+.formulario-contacto .contacto .box h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/*caja de formulario*/
+
+.control {
+    width: 100%;
+    background: #ffd4d2de;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-size: 17px;
+}
+
+/*letra formulario*/
+
+.formulario-contacto .contacto .box label {
+    font-size: 22px;
+    color: #fff;
+}
+
+/*division de pagina*/
+
+.formulario-contacto .contacto {
+    width: 600px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+}
+
+/*mapa*/
+
+.formulario-contacto .contacto .box iframe {
+    width: auto;
+    margin: auto;
+    border-radius: 14px;
+}
+
+/*contacto*/
+
+.formulario-contacto .contacto .box h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/*letra siguenos*/
+
+footer .box .info-1 .sig {
+    text-align: left;
+}
+
+/*iconos contactenos*/
+
+.formulario-contacto .contacto .media a {
+    text-decoration: none;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+}
+
+/*boton contacto*/
+
+.formulario-contacto .contacto .box button[type="submit"] {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 25px;
+    background-color: #f14444;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.formulario-contacto .contacto .box button[type="submit"]:hover {
+    background-color: #e69581;
+}
+
+@media(max-width: 800px) {
+    .contacto {
+        width: 500px;
+        height: auto;
+    }
+
+    .formulario-contacto {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px;
+        padding: 8%;
+        width: auto;
+    }
+
+    .formulario-contacto .box {
+        grid-column: 1 / 1;
+    }
+
+    .formulario-contacto .control {
+        width: auto;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .formulario-contacto .contacto h2,
+    h3,
+    p {
+        text-align: justify;
+    }
+
+    .formulario-contacto .contacto input,
+    label {
+        text-align: center;
+    }
+
+    .formulario-contacto .contacto .box iframe {
+        width: 250px;
+        margin: auto;
+        border-radius: 14px;
+    }
+
+    .formulario-contacto .contacto .box button[type="submit"] {
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+/*********************************************************/
+
+/*fondo pie de pagina*/
+
+.pie-pagina {
+    width: 100%;
+    background: #eeada8;
+}
+
+/*divicion y espaciado del pie de pagina*/
+
+.pie-pagina .info-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+/*info imagen*/
+
+.pie-pagina .info-1 .box figure {
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pagina .info-1 .box figure img {
+    width: 250px;
+}
+
+/*centrar los iconos*/
+
+.pie-pagina .info-1 .red-social {
+    text-align: center;
+}
+
+/*iconos redes*/
+
+.pie-pagina .info-1 .red-social a {
+    text-decoration: none;
+    width: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 15px;
+    background-color: #cf8e89;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 300ms ease;
+}
+
+/*color iconos redes boton*/
+
+.pie-pagina .info-1 .red-social a:hover {
+    color: rgb(255, 127, 238);
+}
+
+/*responsive pie de página*/
+
+@media screen and (max-width:800px) {
+    .pie-pagina .info-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .pie-pagina .info-1 .box p {
+        margin: 30px;
+    }
+}
+
+/*copyrigth*/
+
+.pie-pagina .copy{
+    background-color: #cf8e89;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    z-index: 4;
+}

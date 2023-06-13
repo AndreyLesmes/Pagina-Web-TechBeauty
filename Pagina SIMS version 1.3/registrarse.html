@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrarse</title>
+    <link rel="icon" type="image/png" href="./img/logoi.png">
+    <link rel = "stylesheet" type = "text/css" href="CSS/registrarse.css">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://kit.fontawesome.com/04ef6ad629.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="menus">
+            <div class="logri">
+                <figure class="logo">
+                    <a href = "index.html">
+                        <img src = "img/logo.png">
+                    </a>
+                </figure>
+            </div>
+            <div class="list-menus">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li class="submenu">
+                        <a href="error404.html">Tienda</a>
+                        <ul class="sb">
+                            <li><a href="#">Maquillaje</a></li>
+                            <li><a href="#">Esmaltes</a></li>
+                            <li><a href="#">Cuidado Corporal</a></li>
+                            <li><a href="#">Cuidado Facial</a></li>
+                            <li><a href="#">Higiene</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="error404.html">Ofertas</a></li>
+                    <li><a href="login.html" class="nav-header">Iniciar Sesi&oacute;n</a></li>
+                    <li><a href="registrarse.html">Registrarse</a></li> 
+                    <input type="search" id="buscador" placeholder="Buscar aqu&iacute;">       
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <form class = "registrarse">
+        <div class = "form-signin">
+            <h2>Registrarse</h2>
+            <br/><br/>
+            <label for = "Nombre">Nombre: </label>
+            <input type = "text" id = "nombre" name = "nombre" placeholder = "Ingrese su nombre" required>
+            <br/><br/>
+            <label for = "apellido">Apellido: </label>
+            <input type = "text" id = "apellido" name = "apellido" placeholder = "Ingrese su apellido" required>
+            <br/><br/>
+            <label for = "correo">Correo: </label>
+            <input type = "text" id = "correo" name = "correo" placeholder = "Ingrese su correo" required>
+            <br/><br/>
+            <label for = "contraseña">Contrase&ntilde;a: </label>
+            <input type = "password" id = "contraseña" name = "contraseña" placeholder = "Ingrese su contrase&ntilde;a" required>
+            <br/><br/>
+            <button type = "submit">Guardar</button>
+        </div>
+    </form>
+    <footer class = "pie-pagina">
+        <div class = "info-1">
+            <div class = "box">
+                <figure>
+                    <a href = "#">
+                        <img src = "img/logo.png">
+                    </a>
+                </figure>
+            </div>
+            <div class = "box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut fugit eveniet sunt assumenda dicta? Obcaecati ex veniam placeat, quam doloremque facere corporis repellat optio ullam voluptate magnam et mollitia.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quam ab praesentium a voluptas totam itaque, molestias enim suscipit ut dolor omnis illum qui inventore? Fugiat sapiente in dolor? Libero.</p>
+            </div>
+            <div class = "box">
+                <h2 class="sig">SIGUENOS</h2>
+                <div class = "red-social">
+                    <a href = "#" class = "fa fa-facebook"></a>
+                    <a href = "#" class = "fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class = "copy">
+            <small>&copy; 2023 <b>SIMS</b> - Todos los Derechos Reservados</small>
+        </div>
+    </footer>
+</body>
+</html>
