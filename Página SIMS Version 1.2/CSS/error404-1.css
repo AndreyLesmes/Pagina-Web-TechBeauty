@@ -1,0 +1,193 @@
+/*fondo*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 205, 205, 0.925));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*pocision error*/
+
+.cont {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: crimson;
+    font-family: "montserrat", sans-serif;
+}
+
+/*404 tamaño y espacio*/
+
+/*Animacion 1*/
+
+/* .cont h1 {
+    font-size: 200px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 15px;
+    animation: Animacion 2s ease-in-out infinite;
+}
+
+@keyframes Animacion {
+    0% { opacity: 0; transform: translateX(-50px);}
+    50% { opacity: 1; transform: translateX(100px); }
+    100% { opacity: 0; transform: translateX(-50px);}
+} */
+
+/*Animacion 2*/
+
+/* .cont h1 {
+    font-size: 200px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 15px;
+    animation: Animacion 1.3s ease-in-out infinite;
+}
+
+@keyframes Animacion {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+} */
+
+/*Animacion 3*/
+
+.error-container {
+	text-align: center;
+	font-size: 180px;
+	font-weight: 800;
+	margin: 20px 15px;
+}
+.error-container > span {
+	display: inline-block;
+	line-height: 0.7;
+	position: relative;
+	color: #f14444;
+}
+.error-container > span > span {
+	display: inline-block;
+	position: relative;
+}
+.error-container > span:nth-of-type(1) {
+	perspective: 1000px;
+	perspective-origin: 500% 50%;
+	color: #f14444;
+}
+.error-container > span:nth-of-type(1) > span {
+	transform-origin: 50% 100% 0px;
+	transform: rotateX(0);
+	animation: easyoutelastic 8s infinite;
+}
+.error-container > span:nth-of-type(3) {
+	perspective: none;
+	perspective-origin: 50% 50%;
+	color: #f14444;
+}
+.error-container > span:nth-of-type(3) > span {
+	transform-origin: 100% 100% 0px;
+	transform: rotate(0deg);
+	animation: rotatedrop 8s infinite;
+}
+
+@keyframes easyoutelastic {
+	0% {
+		transform: rotateX(0);
+	}
+	9% {
+		transform: rotateX(210deg);
+	}
+	13% {
+		transform: rotateX(150deg);
+	}
+	16% {
+		transform: rotateX(200deg);
+	}
+	18% {
+		transform: rotateX(170deg);
+	}
+	20% {
+		transform: rotateX(180deg);
+	}
+	60% {
+		transform: rotateX(180deg);
+	}
+	80% {
+		transform: rotateX(0);
+	}
+	100% {
+		transform: rotateX(0);
+	}
+}
+
+@keyframes rotatedrop {
+	0% {
+		transform: rotate(0);
+	}
+	10% {
+		transform: rotate(30deg);
+	}
+	15% {
+		transform: rotate(90deg);
+	}
+	70% {
+		transform: rotate(90deg);
+	}
+	80% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotateX(0);
+	}
+}
+
+.cont p {
+    padding: 40px 40px;
+}
+
+.cont a {
+    text-decoration: none;
+    background: #f14444;
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    animation: salto 1s infinite;
+}
+
+@keyframes salto {
+    0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    }
+    40% {transform: translateY(-20px);
+    }
+    60% {transform: translateY(-10px);
+    }
+}
+
+
+
+/*boton ir a casa*/
+
+.cont a {
+    text-decoration: none;
+    background: #f14444;
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.cont a:hover {
+    background: #e69581;
+}
