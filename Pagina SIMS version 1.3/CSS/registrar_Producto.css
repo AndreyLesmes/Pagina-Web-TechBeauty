@@ -96,6 +96,12 @@ main h1 {
     margin-bottom: 90px;
 }
 
+/*Letra*/
+
+.registro_productos .registro label{
+    color: #fff;
+}
+
 /*titulo contactenos*/
 
 .registro_productos .registro .box h2 {
@@ -132,6 +138,9 @@ main h1 {
     width: 600px;
     max-width: 1200px;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
 }
 
 /*boton*/
