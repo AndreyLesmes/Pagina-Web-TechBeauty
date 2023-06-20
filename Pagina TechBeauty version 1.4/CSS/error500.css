@@ -22,41 +22,7 @@ body {
     font-family: "montserrat", sans-serif;
 }
 
-/*404 tamaño y espacio*/
-
-/*Animacion 1*/
-
-/* .cont h1 {
-    font-size: 200px;
-    margin: 0;
-    font-weight: 900;
-    letter-spacing: 15px;
-    animation: Animacion 2s ease-in-out infinite;
-}
-
-@keyframes Animacion {
-    0% { opacity: 0; transform: translateX(-50px);}
-    50% { opacity: 1; transform: translateX(100px); }
-    100% { opacity: 0; transform: translateX(-50px);}
-} */
-
-/*Animacion 2*/
-
-/* .cont h1 {
-    font-size: 200px;
-    margin: 0;
-    font-weight: 900;
-    letter-spacing: 15px;
-    animation: Animacion 1.3s ease-in-out infinite;
-}
-
-@keyframes Animacion {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
-} */
-
-/*Animacion 3*/
+/*500 tamaño y espacio*/
 
 .error-container {
 	text-align: center;
