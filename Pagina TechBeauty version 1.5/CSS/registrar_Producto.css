@@ -1,0 +1,193 @@
+:root {
+    --trancision1: 0.3s;
+    --cada-item: 36px;
+    --cantidad-items: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial;
+    font-size: 16px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 205, 205, 0.925));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*****************************************/
+
+/*Menú lateral*/
+
+header {
+    width: 160px;
+    background: #ffa1a1;
+    border-radius: 12px;
+    margin: 15px;
+}
+
+.logo img {
+    width: 130px;
+    height: 90px;
+    margin: 23px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+nav ul a {
+    color: #fff;
+    background: #ff9e9e;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul ul {
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+nav ul li:hover ul {
+    height: 100px;
+}
+
+nav ul li:hover ul.sb {
+    height: calc(var(--cantidad-items) * var(--cada-item));
+}
+
+nav ul ul a {
+    background: #ff6969;
+}
+
+/*****************************************/
+
+main {
+    margin: 20px auto;
+}
+
+main h1 {
+    margin: 30px 20px;
+    font-size: 50px;
+}
+
+/*fondo registro de producto*/
+
+.registro_productos {
+    width: 680px;
+    background: #fbb4b4;
+    padding: 20px 8px;
+    margin:  6% auto;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 12px;
+    margin-bottom: 90px;
+}
+
+/*titulo contactenos*/
+
+.registro_productos .registro .box h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/*caja de formulario*/
+
+.control {
+    width: 100%;
+    background: #ffd4d2de;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/*letra formulario*/
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.registro_productos .registro .box label {
+    font-size: 18px;
+    margin: 5px;
+}
+
+/*division de pagina*/
+
+.registro_productos .registro {
+    width: 600px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*boton*/
+
+.registro_productos .registro .box button[type="submit"] {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 25px;
+    background-color: #f14444;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.registro_productos .registro .box button[type="submit"]:hover {
+    background-color: #e69581;
+}
+
+@media(max-width: 1250px) {
+    .registro {
+        width: 350px;
+        height: auto;
+    }
+
+    .registro_productos{
+        width: 450px;
+        margin: 20px;
+    }
+    .registro_productos .registro{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px;
+        padding: 8%;
+        width: auto;
+    }
+
+    .registro_productos .control {
+        width: auto;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .registro_productos .registro p {
+        text-align: justify;
+    }
+
+
+    .registro_productos .registro input,
+    label {
+        width: 250px;
+        text-align: center;
+    }
+
+    .formulario-contacto .contacto .box button[type="submit"] {
+        justify-self: center;
+        align-self: center;
+    }
+}

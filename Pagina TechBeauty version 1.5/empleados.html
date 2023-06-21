@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel = "stylesheet" type = "text/css" href = "CSS/empleados_style.css"/>
+    <link rel="icon" type="image/png" href="./img/logoi.png">
+    <title>Registro Empleados</title>
+</head>
+<body>
+    <header>
+        <nav class="menus">
+            <div class="logri">
+                <figure class="logo">
+                    <a href="inter_Inventario.html">
+                        <img src="img/logo.png">
+                    </a>
+                </figure>
+            </div>
+            <div class="list-menus">
+                <ul>
+                    <li class="submenu">
+                        <a href="">Interfaz</a>
+                        <ul class="sb" style="--cantidad-items: 2">
+                            <li><a href="index.html">Ventas</a></li>
+                            <li><a href="inter_Inventario.html">Inventario</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <ul class="sb" style="--cantidad-items: 4">
+                            <li><a href="Registrar_producto.html">Registrar Productos</a></li>
+                            <li><a href="#">Consultar Productos</a></li>
+                            <li><a href="#">Entrada Productos</a></li>
+                            <li><a href="#">Salida Productos</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Proveedores</a>
+                        <ul class="sb" style="--cantidad-items: 2.5">
+                            <li><a href="proveedores.html">Registrar Proveedor</a></li>
+                            <li><a href="#">Consultar Proveedores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pedidos</a>
+                        <ul class="sb" style="--cantidad-items: 4.5">
+                            <li><a href="#">Registrar Pedido</a></li>
+                            <li><a href="#">Consultar Pedido</a></li>
+                            <li><a href="#">Rechazar Compra</a></li>
+                            <li><a href="#">Registrar pago de Pedido</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Empleado</a>
+                        <ul class="sb" style="--cantidad-items: 3">
+                            <li><a href="empleados.html">Registrar</a></li>
+                            <li><a href="#">Consultar</a></li>
+                            <li><a href="#">Estado</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <form class = "registro">
+        <div class = "empleados">
+            <div class = "box">
+                <h2>Registro Empleados</h2>
+                <label for = "identificacion">N&uacute;mero de identificaci&oacute;n: </label>
+                <br><input class = "barra" type = "text" id = "identificacion" name = "id" placeholder="Ingrese su numero de id" required maxlength="10">
+                <br/><br/>
+                <label for = "Nombre">Nombre: </label>
+                <br><input class = "barra" type = "text" id = "nombre" name = "nombre" placeholder="Ingrese su nombre" required>
+                <br/><br/>
+                <label for = "Nombre">Nombre (2): </label>
+                <br><input class = "barra" type = "text" id = "nombre2" name = "nombre2" placeholder="Ingrese su segundo nombre">
+                <br/><br/>
+                <label for = "Apellido">Apellidos:  </label>
+                <br><input class = "barra" type = "text" id = "apellido" name = "apellido" placeholder="Ingrese sus apellidos" required>
+                <br/><br/>
+                <label for = "Direccion">Direcci&oacute;n: </label>
+                <br><input class = "barra" type = "text" id = "direccion" name = "direccion" placeholder="Ingrese su direcci&oacute;n" required>
+                <br/><br/>
+                <label for = "correo">Correo: </label>
+                <br><input class = "barra" type = "email" id = "correo" name = "correo" placeholder="Ingrese su correo" required>
+                <br/><br/>
+                <label for = "Celular">Celular: </label>
+                <br><input class = "barra" type = "tel" id = "celular" name = "celular" placeholder="Ingrese su numero de celular" required maxlength="10">
+            </div>
+            <div class = "box">
+                <div class = "contact">
+                    <h2>Informaci&oacute;n de Contacto</h2>
+                    <b>Contacto en caso de emergencia</b>
+                    <br/>
+                    <label for = "Nombre">Nombre: </label>
+                    <br><input class = "barra" type = "text" id = "nombre" name = "nombre" placeholder="Ingrese el nombre" required>
+                    <br/><br/>
+                    <label for = "relacion">Parentesco: </label>
+                    <br/><input class = "barra" type = "text" id = "relacion" name = "relacion" placeholder="Ingrese el parentesco" required>
+                    <br/><br/>
+                    <label for = "celular">Celular: </label>
+                    <br/><input class = "barra" type = "tel" id = "celular" name = "celular" placeholder="Ingrese su numero de celular" required maxlength="10">
+                </div>
+            </div>
+            <div class = "boton">
+                <button type = "submit">Guardar Registro</button>                
+            </div>
+        </div>
+    </form> 
+</body>
+</html>
