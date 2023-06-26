@@ -1,0 +1,96 @@
+:root{
+    --trancision1: 0.3s;
+    --cada-item: 36px;
+    --cantidad-items: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial;
+    font-size: 16px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 205, 205, 0.925));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*****************************************/
+
+/*Menú lateral*/
+
+header{
+    width: 160px;
+    background: #ffa1a1;
+    border-radius: 12px;
+    margin: 15px;
+}
+
+.logo img {
+    width: 130px;
+    height: 90px;
+    margin: 23px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+nav ul a{
+    color: #fff;
+    background: #ff9e9e;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul ul{
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+nav ul li:hover ul{
+    height: 100px;
+}
+
+nav ul li:hover ul.sb{
+    height: calc( var(--cantidad-items) * var(--cada-item));
+}
+
+nav ul ul a{
+    background: #ff6969;
+}
+
+/*****************************************/
+
+main h1{
+    margin: 30px 20px;
+    font-size: 50px;
+}
+
+.container{
+    margin: 100px;
+    width: 800px;
+    height: 400px;
+    background-color: #ffa1a1;
+    padding: 12px;
+    border-radius: 12px;
+    margin-left: 50px;
+}
+
+
+.banner_inve img{
+    width: 790px;
+    border-radius: 15px;
+}

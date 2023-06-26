@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS/registrar_Producto.css">
+    <link rel="icon" type="image/png" href="./img/logoi.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Productos</title>
+</head>
+<body>
+    <header>
+        <nav class="menus">
+            <div class="logri">
+                <figure class="logo">
+                    <a href="inter_Inventario.html">
+                        <img src="img/logo.png">
+                    </a>
+                </figure>
+            </div>
+            <div class="list-menus">
+                <ul>
+                    <li class="submenu">
+                        <a href="">Interfaz</a>
+                        <ul class="sb" style="--cantidad-items: 2">
+                            <li><a href="index.html">Ventas</a></li>
+                            <li><a href="inter_Inventario.html">Inventario</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <ul class="sb" style="--cantidad-items: 4">
+                            <li><a href="Registrar_producto.html">Registrar Productos</a></li>
+                            <li><a href="consultar_productos.html">Consultar Productos</a></li>
+                            <li><a href="#">Entrada Productos</a></li>
+                            <li><a href="#">Salida Productos</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Proveedores</a>
+                        <ul class="sb" style="--cantidad-items: 2.5">
+                            <li><a href="proveedores.html">Registrar Proveedor</a></li>
+                            <li><a href="consultar_proveedores.html">Consultar Proveedores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pedidos</a>
+                        <ul class="sb" style="--cantidad-items: 4.5">
+                            <li><a href="#">Registrar Pedido</a></li>
+                            <li><a href="consultar_pedidos.html">Consultar Pedido</a></li>
+                            <li><a href="#">Rechazar Compra</a></li>
+                            <li><a href="#">Registrar pago de Pedido</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Empleado</a>
+                        <ul class="sb" style="--cantidad-items: 3">
+                            <li><a href="empleados.html">Registrar</a></li>
+                            <li><a href="consultar_empleados.html">Consultar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Registrar Productos</h1>
+        <form class="registro_productos">
+            <div class="registro">
+                <div class="box">
+                    <h2><b>Registro de Productos</b></h2>
+                    <div class="seccion1">
+                        <p><label for="nombre">Nombre: </label></p>
+                        <p><input class="control" type="text" name="nombre" id="nombre" placeholder="Escriba el nombre del producto: "></p>
+                        <br />
+                        <p><label for="categoria">Categoria: </label></p>
+                        <select class="categorias">
+                            <option>Seleccione la categoria  </option>
+                            <option>Maquillaje</option>
+                            <option>Cuidado Facial</option>
+                            <option>Cuidado Corporal</option>
+                            <option>Esmaltes</option>
+                            <option>Cabello</option>
+                        </select>
+                        <br /><br />
+                        <p><label for="referencia">Referencia: </label></p>
+                        <p><input class="control" type="text" placeholder="Ingrese la referencia del producto: " required></p>
+                        <br />
+                        <p><label for="fecha">Fecha de Vencimiento: </label></p>
+                        <p><input class="control" type="date" id="date" required </p>
+                        <br /><br />
+                        <p><label for="und_med">Unidad de Medida: </label></p>
+                        <p><input class="control" type="text" placeholder="Ingrese la unidad de medida: " required></p>
+                        <br />
+                        <p><label for="cantidad">Cantidad: </label></p>
+                        <p><input class="control" type="number" placeholder="Ingrese la cantidad del producto: " required min="1" max="500" step="1"></p>
+                        <br />
+                    </div>
+                    <div class="seccion2">
+                        <p><label for="Proveedor">Proveedor: </label></p>
+                        <p><input class="control" type="text" placeholder="Ingrese el Proveedor: " required></p>
+                        <br />
+                        <p><label for="Precio">Precio: </label></p>
+                        <p><input class="control" type="number" placeholder="Ingrese el Precio del producto: " required min="1" step="1"></p>
+                        <br />
+                        <p><label for="imagen">Imagen: </label></p>
+                        <p><input class="control" type="file" id="imagen" accept="image/*" placeholder="Inserte una imagen del producto: " required></p>
+                        <br />
+                        <p><label for="descripcion">Descripción: </label></p>
+                        <p><textarea class="control" name="mensaje" rows="3" cols="25"></textarea></p>
+                    <br />
+                    <p><button type="submit">Guardar</button></p>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

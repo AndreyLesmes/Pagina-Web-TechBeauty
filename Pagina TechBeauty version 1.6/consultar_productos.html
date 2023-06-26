@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="./img/logoi.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Pedidos</title>
+    <link rel="stylesheet" href="CSS/consultar_pedidos.css">
+    <!-- Bootstrap y jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- DataTables.js -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="menus">
+            <div class="logri">
+                <figure class="logo">
+                    <a href="inter_Inventario.html">
+                        <img src="img/logo.png">
+                    </a>
+                </figure>
+            </div>
+            <div class="list-menus">
+                <ul>
+                    <li class="submenu">
+                        <a href="">Interfaz</a>
+                        <ul class="sb" style="--cantidad-items: 2">
+                            <li><a href="index.html">Ventas</a></li>
+                            <li><a href="inter_Inventario.html">Inventario</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Productos</a>
+                        <ul class="sb" style="--cantidad-items: 4">
+                            <li><a href="Registrar_producto.html">Registrar Productos</a></li>
+                            <li><a href="consultar_productos.html">Consultar Productos</a></li>
+                            <li><a href="#">Entrada Productos</a></li>
+                            <li><a href="#">Salida Productos</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Proveedores</a>
+                        <ul class="sb" style="--cantidad-items: 2.5">
+                            <li><a href="proveedores.html">Registrar Proveedor</a></li>
+                            <li><a href="consultar_proveedores.html">Consultar Proveedores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pedidos</a>
+                        <ul class="sb" style="--cantidad-items: 4.5">
+                            <li><a href="#">Registrar Pedido</a></li>
+                            <li><a href="consultar_pedidos.html">Consultar Pedido</a></li>
+                            <li><a href="#">Rechazar Compra</a></li>
+                            <li><a href="#">Registrar pago de Pedido</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Empleado</a>
+                        <ul class="sb" style="--cantidad-items: 3">
+                            <li><a href="empleados.html">Registrar</a></li>
+                            <li><a href="consultar_empleados.html">Consultar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="titulo">
+            <h2>Consultar Productos</h2>
+        </div>
+        <br/>
+        <div class="table-responsive">
+            <table id="miTabla" class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                    <th>Nombre Producto</th>
+                    <th>Categoria</th>
+                    <th>Referencia</th>
+                    <th>Fecha vencimiento</th>
+                    <th>Unidad Medida</th>
+                    <th>Cantidad</th>
+                    <th>Proveedor</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Descripci&oacute;n</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lápiz delineador de labios</td>
+                        <td>Maquillaje</td>
+                        <td>70028097</td>
+                        <td>2024-12-31</td>
+                        <td>0,78g</td>
+                        <td>40</td>
+                        <td>Sofía García</td>
+                        <td>6.200</td>
+                        <td><img src="img/producto_inve/maquillaje_1.png" width="85px"></td>
+                        <td>Lapiz delineador labios</td>
+                    </tr>
+                    <tr>
+                        <td>Base líquida</td>
+                        <td>Maquillaje</td>
+                        <td>73952160</td>
+                        <td>2023-09-30</td>
+                        <td>30ml</td>
+                        <td>80</td>
+                        <td>Alejandro Rodríguez</td>
+                        <td>8.700</td>
+                        <td><img src="img/producto_inve/maquillaje_2.png" width="85px"></td>
+                        <td>Base liquida, duraci&oacute;n x 24hr</td>
+                    </tr>
+                    <tr>
+                        <td>Labial líquido</td>
+                        <td>Maquillaje</td>
+                        <td>20473742</td>
+                        <td>2024-05-15</td>
+                        <td>3ml</td>
+                        <td>100</td>
+                        <td>Valentina López</td>
+                        <td>20.550</td>
+                        <td><img src="img/producto_inve/maquillaje_3.png" width="85px"></td>
+                        <td>Hasta 14hs de duraci&oacute;n</td>
+                    </tr>
+                    <tr>
+                        <td>Esmalte brillo secante</td>
+                        <td>Esmaltes</td>
+                        <td>99456813</td>
+                        <td>2023-12-11</td>
+                        <td>13,5ml</td>
+                        <td>45</td>
+                        <td>Juan Hernández</td>
+                        <td>7.600</td>
+                        <td><img src="img/producto_inve/esmaltes_1.jpg" width="85px"></td>
+                        <td>Secado extra rápido</td>
+                    </tr>
+                    <tr>
+                        <td>Tónico hidratante facial</td>
+                        <td>Cuidado Facial</td>
+                        <td>70460082</td>
+                        <td>2023-11-30</td>
+                        <td>120ml</td>
+                        <td>33</td>
+                        <td>Camila Martínez</td>
+                        <td>14.600</td>
+                        <td><img src="img/producto_inve/facial_1.jpeg" width="85px"></td>
+                        <td>Tonifica, revitaliza y remueve impurezas</td>
+                    </tr>
+                    <tr>
+                        <td>Esmalte uñas de hierro</td>
+                        <td>Esmaltes</td>
+                        <td>60516643</td>
+                        <td></td>
+                        <td>12ml</td>
+                        <td>45</td>
+                        <td>Carlos Sánchez</td>
+                        <td>8.500</td>
+                        <td><img src="img/producto_inve/esmaltes_2.jpeg" width="85px"></td>
+                        <td>Uñas fuertes y largas</td>
+                    </tr>
+                    <tr>
+                        <td>Acondicionador</td>
+                        <td>Cabello</td>
+                        <td>84810284</td>
+                        <td></td>
+                        <td>500ml</td>
+                        <td>37</td>
+                        <td>Isabella González</td>
+                        <td>40.000</td>
+                        <td><img src="img/producto_inve/cabello_1.png" width="85px"></td>
+                        <td>Cabello suave y brillante</td>
+                    </tr>
+                    <tr>
+                        <td>Mascarilla facial en tela</td>
+                        <td>Cuidado Facial</td>
+                        <td>54098762</td>
+                        <td></td>
+                        <td>28gr</td>
+                        <td>28</td>
+                        <td>Miguel Torres</td>
+                        <td>14.000</td>
+                        <td><img src="img/producto_inve/facial_2.jpeg" width="85px"></td>
+                        <td>Rehidrata la piel en 15 min</td>
+                    </tr>
+                    <tr>
+                        <td>Shampoo</td>
+                        <td>Cabello</td>
+                        <td>84952736</td>
+                        <td></td>
+                        <td>850ml</td>
+                        <td>80</td>
+                        <td>Lucía Ramírez</td>
+                        <td>11.900</td>
+                        <td><img src="img/producto_inve/cabello_2.png" width="85px"></td>
+                        <td>Para cabellos maltratados</td>
+                    </tr>
+                    <tr>
+                        <td>Sombra ojos</td>
+                        <td>Maquillaje</td>
+                        <td>70394612</td>
+                        <td></td>
+                        <td>136g</td>
+                        <td>92</td>
+                        <td>Daniel Fernández</td>
+                        <td>20.000</td>
+                        <td><img src="img/producto_inve/maquillaje_4.png" width="85px"></td>
+                        <td>Paleta de tonos calidos</td>
+                    </tr>
+                    <tr>
+                        <td>Loción hidratante corporal</td>
+                        <td>Cuidado Corporal</td>
+                        <td>32293249</td>
+                        <td></td>
+                        <td>200ml</td>
+                        <td>64</td>
+                        <td>Alejandra Herrera</td>
+                        <td>29900</td>
+                        <td><img src="img/producto_inve/corporal_1.jpg" width="85px"></td>
+                        <td>Para la rutina nocturna</td>
+                    </tr>
+                    <tr>
+                        <td>Limpiador facial</td>
+                        <td>Cuidado Facial</td>
+                        <td>49621583</td>
+                        <td></td>
+                        <td>50g</td>
+                        <td>55</td>
+                        <td>Ignacio Ochoa</td>
+                        <td>12500</td>
+                        <td><img src="img/producto_inve/facial_3.jpg" width="85px"></td>
+                        <td>Limpiador facial Ponds diario</td>
+                    </tr>
+                    <tr>
+                        <td>Loción hidratante corporal</td>
+                        <td>Cuidado Corporal</td>
+                        <td>10982654</td>
+                        <td></td>
+                        <td>1L</td>
+                        <td>60</td>
+                        <td>Francisco Cordero</td>
+                        <td>17900</td>
+                        <td><img src="img/producto_inve/corporal_2.jpg" width="85px"></td>
+                        <td>Humectación a la piel</td>
+                    </tr>
+                    <tr>
+                        <td>Protector solar corporal</td>
+                        <td>Cuidado Corporal</td>
+                        <td>51688505</td>
+                        <td></td>
+                        <td>115ml</td>
+                        <td>72</td>
+                        <td>Ximena Pe&ntilde;a</td>
+                        <td>40000</td>
+                        <td><img src="img/producto_inve/corporal_3.jpg" width="85px"></td>
+                        <td>Factor de protección solar 50+</td>
+                    </tr>
+                    <tr>
+                        <td>Mascarilla anti-frizz</td>
+                        <td>Cabello</td>
+                        <td>42631098</td>
+                        <td></td>
+                        <td>300ml</td>
+                        <td>60</td>
+                        <td>Santiago Mora</td>
+                        <td>21500</td>
+                        <td><img src="img/producto_inve/cabello_3.jpg" width="85px"></td>
+                        <td>Está diseñada para cabellos dañados y teñidos</td>
+                    </tr>
+                </tbody>
+                <theadfooter>
+                    <tr>
+                        <th>Nombre Producto</th>
+                        <th>Categoria</th>
+                        <th>Referencia</th>
+                        <th>Fecha vencimiento</th>
+                        <th>Unidad Medida</th>
+                        <th>Cantidad</th>
+                        <th>Proveedor</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                        <th>Descripci&oacute;n</th>
+                    </tr>
+                </theadfooter>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+        $('#miTabla').DataTable({
+            searching: true,
+            lengthMenu: [5, 10, 15, 20], 
+            language: {
+            url: "//cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json"
+            },
+        });
+        });
+    </script>
+</body>
+</html>
