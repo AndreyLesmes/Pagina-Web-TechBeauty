@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/logo_barra.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Empleados</title>
+    <link rel="stylesheet" href="CSS/consultar_empleados.css">
+    <script src="https://kit.fontawesome.com/04ef6ad629.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap y jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- DataTables.js -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav" id="nav">
+            <ul class="list">
+                <div class="head">
+                    <div class="profile">
+                        <img src="img/icon.jpeg">
+                        <p>User</p>
+                    </div>
+                    <i class="fa-solid fa-bars" id="menu"></i>
+                </div>
+    
+                <li class="list_item">
+                    <div class="list_button">
+                        <i class="icon fa-solid fa-border-all"></i>
+                        <i class="fa-solid fa-border-all"></i>
+                        <a href="inter_Inventario.html" class="nav_link">Dashboard</a>
+                    </div>
+                </li>
+    
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <i class="icon fa-solid fa-bag-shopping"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <a href="#" class="nav_link">Productos</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+    
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="Registrar_producto.html" class="nav_link nav_link--inside">Registrar Productos</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="consultar_productos.html" class="nav_link nav_link--inside">Consultar Productos</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <i class="icon fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="#" class="nav_link">Pedidos</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+    
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="registrar_pedido.html" class="nav_link nav_link--inside">Registrar Pedidos</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="consultar_pedidos.html" class="nav_link nav_link--inside">Consultar Pedidos</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <i class="icon fa-solid fa-users"></i>
+                        <i class="fa-solid fa-users"></i>
+                        <a href="#" class="nav_link">Proveedores</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+    
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="registrar_proveedores.html" class="nav_link nav_link--inside">Registrar Proveedores</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="consultar_proveedores.html" class="nav_link nav_link--inside">Consultar Proveedores</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="list_item list_item--click">
+                    <div class="list_button list_button--click">
+                        <i class="icon fa-solid fa-user-group"></i>
+                        <i class="fa-solid fa-user-group"></i>
+                        <a href="#" class="nav_link">Empleados</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+    
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="registrar_empleados.html" class="nav_link nav_link--inside">Registrar Empleados</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="consultar_empleados.html" class="nav_link nav_link--inside">Consultar Empleados</a>
+                        </li>
+                    </ul>
+                </li>
+    
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="titulo">
+            <h2>Consultar Proveedores</h2>
+        </div>
+        <br/>
+        <div class="table-responsive">
+            <table id="miTabla" class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Dirección</th>
+                        <th>Correo</th>
+                        <th>Celular</th>
+                        <th>Cargo</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>222</td>
+                        <td>Andrea</td>
+                        <td>Perez</td>
+                        <td>Carrera 56A #78-90</td>
+                        <td>andrea111p@gmail.com</td>
+                        <td>3345638921</td>
+                        <td>Administrador(a)</td>
+                        <td>Vacaciones</td>
+                    </tr>
+                    <tr>
+                        <td>111</td>
+                        <td>Pedro</td>
+                        <td>Martinez</td>
+                        <td>Calle 123 #45-67</td>
+                        <td>pedromartinez@gmail.com</td>
+                        <td>3237957003</td>
+                        <td>Vendedor(a)</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td>333</td>
+                        <td>Sara</td>
+                        <td>Díaz</td>
+                        <td>Avenida 19 #34-56</td>
+                        <td>sarad@gmail.com</td>
+                        <td>3589246103</td>
+                        <td>Jefe(a)</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td>444</td>
+                        <td>Camila</td>
+                        <td>Palacio</td>
+                        <td>Calle 98 #12-34</td>
+                        <td>palaciocami@gmail.com</td>
+                        <td>3123564789</td>
+                        <td>Vendedor(a)</td>
+                        <td>Permiso</td>
+                    </tr>
+                    <tr>
+                        <td>555</td>
+                        <td>Sharon</td>
+                        <td>Rodriguez</td>
+                        <td>Carrera 71 #23-45</td>
+                        <td>sharon587@gmail.com</td>
+                        <td>3521978640</td>
+                        <td>Vendedor(a)</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td>666</td>
+                        <td>Camilo</td>
+                        <td>Contreras</td>
+                        <td>Avenida Suba #67-89</td>
+                        <td>camilocontrerass2@gmail.com</td>
+                        <td>3921760458</td>
+                        <td>Vendedor(a)</td>
+                        <td>Terminado</td>
+                    </tr>
+                    <tr>
+                        <td>4884</td>
+                        <td>Samuel</td>
+                        <td>Mendoza</td>
+                        <td>Carrera 56D #78-90</td>
+                        <td>samuelmendoza@gmail.com</td>
+                        <td>3895271640</td>
+                        <td>Jefe(a)</td>
+                        <td>Permiso</td>
+                    </tr>
+                    <tr>
+                        <td>2664</td>
+                        <td>Guillermo</td>
+                        <td>Torres</td>
+                        <td>Avenida 7 #12-34</td>
+                        <td>guillermotorres@gmail.com</td>
+                        <td>3589027461</td>
+                        <td>Jefe(a)</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td>1332</td>
+                        <td>Melissa</td>
+                        <td>Muñoz</td>
+                        <td>Avenida Caracas #12-34</td>
+                        <td>melissamunoz@gmail.com</td>
+                        <td>3094652781</td>
+                        <td>Vendedor(a)</td>
+                        <td>Terminado</td>
+                    </tr>
+                    <tr>
+                        <td>2109</td>
+                        <td>Elena</td>
+                        <td>Rodríguez</td>
+                        <td>Calle 78 #12-34</td>
+                        <td>elenarodriguez@gmail.com</td>
+                        <td>3875092416</td>
+                        <td>Administrador(a)</td>
+                        <td>Permiso</td>
+                    </tr>
+                </tbody>
+                <footer>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Dirección</th>
+                        <th>Correo</th>
+                        <th>Celular</th>
+                        <th>Cargo</th>
+                        <th>Estado</th>
+                    </tr>
+                </footer>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+        $('#miTabla').DataTable({
+            searching: true,
+            lengthMenu: [5, 10, 15, 20], 
+            language: {
+            url: "//cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json"
+            },
+            columnDefs: [
+            {
+                targets: 7, // Índice de la columna "Estado" (0-indexed)
+                createdCell: function(cell, cellData, rowData, rowIndex, colIndex) {
+                if (cellData === "Activo") {
+                    $(cell).css({
+                    'background-color': '#5dc460',//verde
+                    'color': 'white' 
+                    });
+                } else if (cellData === "Permiso") {
+                    $(cell).css({
+                    'background-color': '#bababa',//gris
+                    'color': 'white' 
+                    });
+                } else if (cellData === "Vacaciones") {
+                    $(cell).css({
+                    'background-color': '#ffbf75',//naranja
+                    'color': 'white' 
+                    });
+                } else if (cellData === "Terminado") {
+                    $(cell).css({
+                        'background-color': '#f86f6f',//rojo
+                        'color': 'white'
+                    });
+                }
+                }
+            }
+            ]
+        });
+        });
+    </script>
+
+    <script src="java_script/menu_inve.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/interfaz_inventario.css">
+    <link rel="icon" type="image/png" href="img/logo_barra.png">
+    <script src="https://kit.fontawesome.com/04ef6ad629.js" crossorigin="anonymous"></script>
+    <title>Administrador</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav" id="nav">
+                <ul class="list">
+                    <div class="head">
+                        <div class="profile">
+                            <img src="img/icon.jpeg">
+                            <p>User</p>
+                        </div>
+                        <i class="fa-solid fa-bars" id="menu"></i>
+                    </div>
+        
+                    <li class="list_item">
+                        <div class="list_button">
+                            <i class="icon fa-solid fa-border-all"></i>
+                            <i class="fa-solid fa-border-all"></i>
+                            <a href="inter_Inventario.html" class="nav_link">Dashboard</a>
+                        </div>
+                    </li>
+        
+                    <li class="list_item list_item--click">
+                        <div class="list_button list_button--click">
+                            <i class="icon fa-solid fa-bag-shopping"></i>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <a href="#" class="nav_link">Productos</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+        
+                        <ul class="list_show">
+                            <li class="list_inside">
+                                <a href="Registrar_producto.html" class="nav_link nav_link--inside">Registrar Productos</a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="consultar_productos.html" class="nav_link nav_link--inside">Consultar Productos</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="list_item list_item--click">
+                        <div class="list_button list_button--click">
+                            <i class="icon fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a href="#" class="nav_link">Pedidos</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+        
+                        <ul class="list_show">
+                            <li class="list_inside">
+                                <a href="registrar_pedido.html" class="nav_link nav_link--inside">Registrar Pedidos</a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="consultar_pedidos.html" class="nav_link nav_link--inside">Consultar Pedidos</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="list_item list_item--click">
+                        <div class="list_button list_button--click">
+                            <i class="icon fa-solid fa-users"></i>
+                            <i class="fa-solid fa-users"></i>
+                            <a href="#" class="nav_link">Proveedores</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+        
+                        <ul class="list_show">
+                            <li class="list_inside">
+                                <a href="registrar_proveedores.html" class="nav_link nav_link--inside">Registrar Proveedores</a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="consultar_proveedores.html" class="nav_link nav_link--inside">Consultar Proveedores</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="list_item list_item--click">
+                        <div class="list_button list_button--click">
+                            <i class="icon fa-solid fa-user-group"></i>
+                            <i class="fa-solid fa-user-group"></i>
+                            <a href="#" class="nav_link">Empleados</a>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+        
+                        <ul class="list_show">
+                            <li class="list_inside">
+                                <a href="registrar_empleados.html" class="nav_link nav_link--inside">Registrar Empleados</a>
+                            </li>
+                            <li class="list_inside">
+                                <a href="consultar_empleados.html" class="nav_link nav_link--inside">Consultar Empleados</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                </ul>
+            </nav>
+        </header>
+        <div class="content-container">
+            <main>
+                <h1>Construcción</h1>
+            </main>
+        </div>
+    </div>
+
+    <script src="java_script/menu_inve.js"></script>
+
+</body>
+</html>

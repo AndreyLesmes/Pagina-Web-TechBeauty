@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: #f5f5cd !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: #cb3234;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/*barra de navegación*/
+
+nav {
+    color: #fff;
+}
+
+nav .list-menus ul {
+    margin: 0;
+}
+
+nav .list-menus li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav .list-menus a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav .list-menus a:hover {
+    background-color: #f5f5dcc4;
+    border-radius: 12px;
+    color: #000;
+}
+
+input[type="search"] {
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*lista desplegable */
+
+.submenu:hover .sb {
+    display: block;
+    border-radius: 12px;
+}
+
+.submenu .sb {
+    display: none;
+    background: #cb3234;
+    position: absolute;
+    z-index: 2;
+    /*z-index es para colocar un elemento sobre otros*/
+    width: 10%;
+}
+
+.sb a {
+    display: block;
+}
+
+/*ubicacion logo en la barra de navegación*/
+
+.logri {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 23px;
+}
+
+/*Tamaño imagen*/
+
+.logo img {
+    margin: 5px;
+    width: 100px;
+    height: 100%;
+}
+
+/*************************************************/
+
+/*copyrigth*/
+
+.pie-pagina .copy {
+    background-color: #cb3234;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    z-index: 4;
+}
+
+/*recuperar*/
+
+.recuperar {
+    max-width: 500px;
+    width: 400px;
+    margin: 8% auto;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 5px black;
+}
+
+.recuperar .recu .control{
+    border: 1px solid #cd3432;
+}
+
+h2 {
+    text-align: center;
+}
+
+.recuperar .recu input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*Botones*/
+
+.recu{
+    margin: 30px;
+}
+
+.submit{
+    background-color: #f14444;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    margin-right: 44px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+.submit1{
+    background-color: #f14444;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.recuperar .recu button:hover{
+    background-color: #e69581;
+
+}
+
+/*responsivo login*/
+
+@media screen and (max-width: 625px) {
+    .login {
+        max-width: 300px;
+        margin: 15% auto;
+        padding: 50px;
+        background-color: #fbb4b4;
+        border-radius: 12px;
+    }
+}
+
+/*********************************************************/
+
+/*fondo pie de pagina*/
+
+.pie-pagina {
+    width: 100%;
+    background: #EFCFBB;
+}
+
+/*divicion y espaciado del pie de pagina*/
+
+.pie-pagina .info-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 15px 12px;
+}
+
+/*info imagen*/
+
+.pie-pagina .info-1 .box figure {
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pagina .info-1 .box figure img {
+    width: 250px;
+}
+
+/*centrar los iconos*/
+
+.pie-pagina .info-1 .red-social {
+    text-align: center;
+}
+
+/*iconos redes*/
+
+.pie-pagina .info-1 .red-social a {
+    text-decoration: none;
+    width: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 15px;
+    background-color: #cf8e89;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 300ms ease;
+}
+
+/*color iconos redes boton*/
+
+.pie-pagina .info-1 .red-social a:hover {
+    color: rgb(255, 127, 127);
+}
+
+/*responsive pie de página*/
+
+@media screen and (max-width:800px) {
+    .pie-pagina .info-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .pie-pagina .info-1 .box p {
+        margin: 30px;
+    }
+}

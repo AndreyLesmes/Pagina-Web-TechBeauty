@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5cd !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.nav{
+    width: 300px;
+}
+
+.head img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    height: 60px;
+}
+
+.head i{
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 12px;
+} 
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 16px 16px 0;
+    background-color: #dc3234;
+    color: #fff;
+}
+
+.list_item{
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.list_item--click{
+    cursor: pointer;
+}
+
+.list_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.list_button:hover{
+    background-color: #f5f5dcc4;
+    padding: 6px 12px;
+    border-radius: 9px;}
+
+a:hover {
+    color: #000000 !important;
+}
+
+.arrow .fa-chevron-right{
+    transform: rotate(90deg);
+}
+
+.fa-chevron-right{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.nav_link{
+    color: #fff;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none !important;
+}
+
+.nav_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav_link--inside:hover{
+    background: #f5f5dcc4;
+    color: #000000;
+}
+
+.list_show{
+    width: 80%;
+    margin-left: 43px;
+    border-left: 2px solid #f5f5dcc4;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+.list_item .icon{
+    display: none;
+}
+
+.nav.active{
+    width: 75px;
+}
+
+.nav.active .head i{
+    margin-left: 30px;
+}
+
+.nav.active .list_item .icon{
+    display: contents;
+    font-size: 30px;
+    padding: 20px;
+    margin: 12px;   
+}
+
+.nav.active .nav_link,
+.nav.active .profile{
+    display: none;
+    margin: auto;
+}
+
+.nav.active .list_button{
+    padding: 2px;
+    margin-left: 30px;
+    margin-bottom: 55px;
+}
+
+.nav.active .list_button:hover{
+    padding: 10px;
+    background-color: #f5f5dcc4;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.container {
+    display: flex; /* Utilizar un diseño de columnas */
+    justify-content: flex-start; /* Alinear los elementos hacia la izquierda */
+}
+
+.content-container {
+    margin: 100px;
+    width: 800px;
+    height: 400px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-left: 50px;
+    flex: 2; /* Ocupa el doble del ancho del menú */
+    padding: 50px; /* Agrega un espacio de separación entre el contenido y el borde */
+    margin-top: 1px;
+
+}
+
+/*Para el fondo*/
+
+.registro{
+    width: 650px;
+    height: 550px;
+    padding: 10px;
+    border-radius: 12px;
+    margin-left: 20%;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 5px black;
+}
+
+/*Los titulos*/
+.registro .empleados h2{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+
+/*Para la letra*/
+.registro .empleados label{
+    font-size: 20px;
+    color: #000000;
+}
+
+/*Campos de texto*/
+.barra{
+    border-radius: 5px;
+    font-size: 18px;
+    width: 240px;
+    margin-top: 8px;
+    padding: 8px 20px;
+    border: 1px solid #cd3432;
+}
+
+/*Estilo de cargo y estado*/
+.cargo,
+.estado{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dc3234;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+/*Dividir la pagina*/
+.registro .empleados{
+    width: 600px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+}
+
+/*Para el boton*/
+.registro .empleados button[type = "submit"]{
+    margin: 14px;
+    padding: 10px 30px;
+    border-radius: 12px;
+    border: #fff;
+    background-color: #dc3234;
+    color: #fff;
+    display: block;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+.registro .empleados button[type="submit"]:hover {
+    background-color: #e69581;
+}
+
+
+/*Responsive*/
+@media(max-width: 800px){
+    .registro{
+        width: 390px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .registro .empleados{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .registro .empleados label{
+        padding: 15px;
+    }
+    .registro .empleados button[type="submit"]{
+        display: block;
+        margin-left: 30%;
+    }
+
+    .registro .empleados .barra{
+        margin-left: 50px;
+    }
+
+    
+
+}
