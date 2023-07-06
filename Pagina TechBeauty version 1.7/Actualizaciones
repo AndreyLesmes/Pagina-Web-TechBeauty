@@ -5,6 +5,9 @@ Modifique la tienda poniendo sus respectivas categorias y los productos en cada 
 Cambie el logo de la página para que se adapte a los nuevos colores
 Los productos de la página incial ya no se sobreponen al footer
 El error 404 esta en la parte de compra, y el 500 esta en ofertas
+La carpeta de javascript tiene funcionalidades en el dashboard: 
+  1. Para que se muestren los submenus 
+  2. Al darle click al icono de barras se esconda el menu
 
 
 FALTA POR HACER RESPONSIVE LA MAYOR PARTE DEL DASHBOARD
