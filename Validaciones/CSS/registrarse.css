@@ -1,0 +1,236 @@
+/*fondo*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f5f5cd !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: #cd3234;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+/*barra de navegación*/
+
+nav {
+    color: #fff;
+}
+
+nav .list-menus ul {
+    margin: 0;
+}
+
+nav .list-menus li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav .list-menus a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav .list-menus a:hover {
+    background-color: #f5f5dcc4;
+    border-radius: 12px;
+    color: #000000;
+}
+
+input[type="search"] {
+    width: 20%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*lista desplegable */
+
+.submenu:hover .sb {
+    display: block;
+    border-radius: 12px;
+}
+
+.submenu .sb {
+    display: none;
+    background: #cd3234;
+    position: absolute;
+    z-index: 2;
+    /*z-index es para colocar un elemento sobre otros*/
+    width: 10%;
+}
+
+.sb a {
+    display: block;
+}
+
+/*ubicacion logo en la barra de navegación*/
+
+.logri {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 23px;
+}
+
+/*Tamaño imagen*/
+
+.logo img {
+    margin: 5px;
+    width: 100px;
+    height: 100%;
+}
+
+/*singin*/
+
+.form-signin {
+    max-width: 500px;
+    margin: 6% auto;
+    padding: 50px;
+    border-radius: 12px;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* .registrarse .form-signin .control{
+    border: 1px solid #cd3432;
+}
+ */
+h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*Boton login y singin*/
+
+button[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 15px 25px;
+    background-color: #f14444;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e69581;
+}
+
+/*responsivo singin*/
+
+@media screen and (max-width: 660px) {
+    .form-signin {
+        max-width: 300px;
+        margin: 15% auto;
+        padding: 50px;
+        border-radius: 12px;
+        border: 2px solid #000000;
+        box-shadow: 5px 5px 5px black;
+    }
+}
+
+/*********************************************************/
+
+/*fondo pie de pagina*/
+
+.pie-pagina {
+    width: 100%;
+    background: #EFCFBB;
+}
+
+/*divicion y espaciado del pie de pagina*/
+
+.pie-pagina .info-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 15px 12px;
+}
+
+/*info imagen*/
+
+.pie-pagina .info-1 .box figure {
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pagina .info-1 .box figure img {
+    width: 250px;
+}
+
+/*centrar los iconos*/
+
+.pie-pagina .info-1 .red-social {
+    text-align: center;
+}
+
+/*iconos redes*/
+
+.pie-pagina .info-1 .red-social a {
+    text-decoration: none;
+    width: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 15px;
+    background-color: #cf8e89;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 300ms ease;
+}
+
+/*color iconos redes boton*/
+
+.pie-pagina .info-1 .red-social a:hover {
+    color: rgb(255, 127, 127);
+}
+
+/*responsive pie de página*/
+
+@media screen and (max-width:800px) {
+    .pie-pagina .info-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .pie-pagina .info-1 .box p {
+        margin: 30px;
+    }
+}
+
+/*copyrigth*/
+
+.pie-pagina .copy{
+    background-color: #cd3234;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    z-index: 4;
+}
