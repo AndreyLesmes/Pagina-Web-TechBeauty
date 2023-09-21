@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root{
+    --blanco: #fff;
+    --sobre-menu: #f5f5dcc4;
+    --bg-menu: #cd3234;
+    --bg-body: #c7e1ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: var(--blanco);
+    background-color: #f5f5cd !important;
+    background-attachment: fixed;
+}
+
+.menu-dashboard{
+    position: relative;
+    margin: 5px;
+    max-width: 150px;
+    min-height: 98.5vh;
+    background: var(--bg-menu);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: max-width .3s ease;
+}
+
+.top-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu-dashboard .logo{
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .logo img{
+    width: 70px;
+    transition: width .3s ease;
+}
+
+.menu .enlace a{
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.top-menu .logo span{
+    font-size: 20px;
+    margin-left: 20px;
+    display: none;
+}
+
+.top-menu .toggle{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.top-menu .toggle i{
+    font-size: 35px;
+}
+
+.menu .enlace{
+    width: 100%;
+    padding: 15px 0 15px 9px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.menu .CS{
+    width: 73.34%;
+    height: 7%;
+    padding: 15px 0 15px 9px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s ease;
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.menu .enlace:hover, .menu .CS:hover{
+    background: var(--sobre-menu);
+}
+
+.menu .enlace i, .menu .CS i{
+    margin-right: 15px;
+    font-size: 22px;
+}
+
+.menu .enlace span, .menu .CS span{
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.menu-dashboard.open{
+    max-width: 300px;
+}
+
+
+.menu-dashboard.open .top-menu span{
+    display: block;
+}
+
+.menu-dashboard.open .menu .enlace {
+    width: auto;
+    padding: 10px;
+}
+
+.menu-dashboard.open .menu .enlace a{
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-dashboard.open .menu .CS {
+    width: 86.67%;
+    padding: 10px;
+}
+
+.menu-dashboard.open .menu .enlace a, 
+.menu-dashboard.open .menu .CS a{
+    opacity: 1;
+}
+
+.menu-dashboard.open .menu .enlace span, 
+.menu-dashboard.open .menu .CS span{
+    opacity: 1;
+}
+
+.container {
+    display: flex; /* Utilizar un diseño de columnas */
+    justify-content: flex-start; /* Alinear los elementos hacia la izquierda */
+}
+
+.content-container {
+    margin: 100px;
+    width: 800px;
+    height: 400px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-left: 50px;
+    flex: 2; /* Ocupa el doble del ancho del menú */
+    padding: 50px; /* Agrega un espacio de separación entre el contenido y el borde */
+    margin-top: 1px;
+
+}
+
+/*****************************************/
+
+
+main h1 {
+    margin: 30px 20px;
+    font-size: 50px;
+    color: #000000;
+}
+
+/*fondo registro de producto*/
+
+.registro_productos {
+    width: 680px;
+    padding: 20px 8px;
+    margin:  6% auto;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 90px;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 30%;
+}
+
+/*Estilo de categorias*/
+
+.categorias{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dc3234;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/*caja de formulario*/
+
+.control {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dc3234;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/*letra formulario*/
+
+
+.registro_productos .registro .box label {
+    font-size: 18px;
+    margin: 5px;
+    color: #000000;
+}
+
+/*division de pagina*/
+
+.registro_productos .registro{
+    width: 600px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+}
+
+/*boton*/
+
+.registro_productos .registro .box input[type="submit"] {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 25px;
+    background-color: #f14444;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 4%;
+}
+
+.registro_productos .registro .box input[type="submit"]:hover {
+    background-color: #e69581;
+}
+
+.registro_productos .registro .botonRegresar{
+    padding: 15px;
+    background-color: #f14444;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.registro_productos .botonRegresar:hover{
+    background-color: #e69581;
+    text-decoration: none;
+}
+
+@media(max-width: 1250px) {
+    
+    .content-container {
+        padding: 1%;
+        width: 150px;
+    }
+
+    main h1{
+        width: 350%;
+        margin: 0 0;
+    }
+
+    .registro {
+        width: 350%;
+        height: auto;
+    }
+
+    .registro_productos{
+        width: 450px;
+        margin: 20px;
+    }
+    .registro_productos .registro{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 8%;
+        width: auto;
+    }
+
+    .registro_productos .registro p {
+        text-align: justify;
+    }
+
+    
+}
